@@ -56,12 +56,31 @@ main h1 {
   text-align: center;
 }
 
+@media (max-width: 662px) {
+  main h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 385px) {
+  main h1 {
+    font-size: 1.6rem;
+  }
+}
+
 #Meals-cards {
   width: 80%;
   margin: 2rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #Meals-cards {
+    grid-template-columns: 100%;
+  }
 }
 
 .card {
