@@ -56,19 +56,6 @@ main h1 {
   text-align: center;
 }
 
-@media (max-width: 662px) {
-  main h1 {
-    font-size: 1.7rem;
-    font-weight: bolder;
-  }
-}
-
-@media (max-width: 385px) {
-  main h1 {
-    font-size: 1.6rem;
-  }
-}
-
 #Meals-cards {
   width: 80%;
   margin: 2rem auto;
@@ -78,9 +65,6 @@ main h1 {
 }
 
 @media (max-width: 768px) {
-  #Meals-cards {
-    grid-template-columns: 100%;
-  }
 }
 
 .card {
@@ -117,4 +101,18 @@ main h1 {
   color: white;
   border-radius: 4px;
   padding: 0.75rem 1.75rem;
+}
+
+@media (max-width: 768px) {
+  #main-header ul {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  #Meals-cards {
+    grid-template-columns: 100%;
+  }
 }
