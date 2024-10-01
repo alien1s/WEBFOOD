@@ -45,6 +45,92 @@ a {
   color: rgb(228, 163, 44);
 }
 
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  background-color: rgb(228, 163, 44);
+  width: 100%;
+  height: 3px;
+}
+
+.menu-btn:hover {
+  span {
+    background-color: wheat;
+    height: 4px;
+  }
+}
+
+#side-bar {
+  background-color: rgb(29, 26, 24);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: none;
+}
+
+#side-bar:target {
+  display: block;
+}
+
+#side-bar header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+
+  .menu-btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-btn span {
+    background-color: wheat;
+    width: 3px;
+    height: 100%;
+  }
+
+  .menu-btn:hover {
+    span {
+      background-color: rgb(228, 163, 44);
+      width: 4px;
+    }
+  }
+}
+
+#side-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#side-bar li {
+  margin: 1rem;
+}
+
+#side-bar a {
+  color: rgb(185, 131, 31);
+  font-size: 1.25rem;
+}
+
+#side-bar a:hover {
+  color: rgb(228, 163, 44);
+  font-size: 1.5rem;
+}
+
 main {
   margin: auto;
 }
@@ -106,6 +192,10 @@ main h1 {
 @media (max-width: 768px) {
   #main-header ul {
     display: none;
+  }
+
+  .menu-btn {
+    display: flex;
   }
 
   main h1 {
